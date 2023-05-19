@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+     <script src="./digitalclock.js"></script>
+     <link rel="stylesheet" href="./DigitalClock.css">
+</head>
+<body onload="clk()">
+   <div>
+   <h1 id="Time"></h1>
+   <h1 id="Date"></h1>    
+   <h1 id="Day"></h1>
+   <button id="windowButtonAlarm" onclick="loadAlarm()">Set Alarm</button>
+
+</div>
+   <h1 id="sec"></h1>
+   <div id="greet">
+      <span id="close" onclick="removeTheWindow()">x</span>
+    <h1 id="message"></h1>
+    <video id="vid" autoplay muted loop></video>
+   </div>     
+</body>
+</html>
+
+<div id="alarm">
+   <span id="closeAlarm" onclick="removeAlarm()">x</span>
+   <select>
+         <option value="1">1</option>      
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="5">5</option>
+         <option value="6">6</option>
+         <option value="7">7</option>
+         <option value="8">8</option>
+         <option value="9">9</option>
+         <option value="10">10</option>
+         <option value="11">11</option>
+         <option value="12">12</option>
+   </select>
+</div>
